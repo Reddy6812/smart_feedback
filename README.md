@@ -1,5 +1,4 @@
 # smart_feedback
----
 
 ```markdown
 ## Running the Project
