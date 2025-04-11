@@ -1,5 +1,20 @@
 # smart_feedback
 
+
+The **Smart Feedback Platform** is a Django-based web application designed for collecting, storing, and analyzing feedback from students about their courses and instructors. 
+
+It provides:
+- A simple interface for students to submit anonymous feedback.
+- A secure admin panel for instructors and administrators to view responses.
+- Analytics on feedback trends such as average ratings and participation.
+- Integration with AWS for file storage and MySQL (via RDS) for relational data.
+- REST APIs secured with JWT authentication.
+- Support for background jobs using Celery and Redis.
+
+This project is suitable for university departments, online learning platforms, or any organization that regularly collects course feedback.
+
+---
+
 ```markdown
 ## Running the Project
 
