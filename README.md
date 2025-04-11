@@ -94,4 +94,3 @@ Authorization: Bearer <your_access_token>
 ---
 ```
 
-Let me know if you want this integrated with the full README or if you'd like a PDF/Markdown file output.
