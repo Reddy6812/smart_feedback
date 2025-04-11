@@ -15,7 +15,7 @@ This project is suitable for university departments, online learning platforms, 
 
 ---
 
-```markdown
+
 ## Running the Project
 
 This section explains how to run the Smart Feedback Platform locally, with Docker, and use JWT for authentication. It also covers deploying via GitLab CI/CD.
