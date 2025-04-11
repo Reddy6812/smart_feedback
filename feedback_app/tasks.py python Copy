@@ -1,0 +1,13 @@
+from celery import shared_task
+from django.core.mail import send_mail
+from django.conf import settings
+from .models import Feedback
+from django.db.models import Avg
+
+@shared_task
+def send_feedback_summary():
+    total_feedback = Feedback.objects.count()
+    avg_rating = Feedback.objects.all().aggregate(avg=Avg('rating'))['avg']
+    subject = "Daily Feedback Summary"
+    message = f"Total feedback count: {total_feedback}\nAverage rating: {avg_rating:.2f}"
+    send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, ['admin@example.com'])
