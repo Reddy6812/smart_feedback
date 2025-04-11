@@ -1,0 +1,12 @@
+from django.contrib import admin
+from .models import Course, Feedback
+
+@admin.register(Course)
+class CourseAdmin(admin.ModelAdmin):
+    list_display = ('name', 'instructor')
+
+@admin.register(Feedback)
+class FeedbackAdmin(admin.ModelAdmin):
+    list_display = ('course', 'rating', 'created_at')
+    list_filter = ('course', 'rating', 'created_at')
+    search_fields = ('comment',)
